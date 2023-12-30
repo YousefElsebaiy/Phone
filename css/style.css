@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    border: 2px solid white;
+    z-index: 99999;
+    width: 80%;
+    position: fixed; 
+    border-radius: 15px 35px;
+    background-color: white;  
+    margin: 10px 10%; 
+    transition: .5s;
+}
+header nav{
+    margin: 10px 10px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+i{
+    cursor: pointer;
+}
+header nav .text{
+    display: flex;
+    align-items: center;
+}
+header nav .text h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blueviolet;
+    margin: 0 5px 0 0;
+}
+header nav .links{
+    display: flex;
+}
+header nav .links p, header nav .social-link i{
+    margin: 0 7.5px;
+}
+header nav .links p{
+    margin: 10px;
+    padding: 15px;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid white;
+    transition: .5s;
+    border-radius: 15px 35px;
+}
+header nav .links p:hover{
+    border: 2px solid white;
+}
+header nav .links{
+    position: absolute;
+    top: 100%;
+    left: -420px;
+    flex-direction: column;
+    background-color: white;
+    width: 200px;
+    text-align: center;
+    padding: 20px 0;
+    transition: .5s ;
+    border-radius: 15px 35px;
+    color: blueviolet;
+    border: 2px solid white;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.menu{
+    height: 24px;
+    width: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.menu span{
+    background-color: blueviolet;
+    width: 100%;
+    position: absolute;
+    height: 4px;
+    transition: .5s;
+}
+#first{
+    top: 0;
+}
+#center{
+    top: 10px;
+}
+#last{
+    top: 20px;
+}
+#first.first{
+    top: 10px;
+    transform: rotate(45deg);
+    background-color: red;
+}
+#last.last{
+    top: 10px;
+    transform: rotate(-45deg);
+    background-color: red;
+}
+#center.center{
+    opacity: 0;
+}
+header nav .links.active{
+    left: 0;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-instagram{
+    color: palevioletred;
+}
+header nav .text{
+    color: blueviolet;
+}
+.n1{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.n1 img{
+    width: 36%;
+}
+.n1 .div1 .text h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: blueviolet;
+    margin: 0 0 15px;
+}
+.n1 .div1 .text p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 0 15px;
+}
+.n1 .div1 .text p span{
+    color: blueviolet;
+    font-weight: 700;
+    font-size: 20px;
+}
+.n1 .div1 .text button{
+    padding: 10px 30px;
+    font-size: 20px;
+    border: 2px solid blueviolet;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 15px 35px;
+    cursor: pointer;
+    background-color: white;
+    transition: .5s;
+    margin: 0 0 10px;
+}
+.n1 .div1 .text button:hover{
+    background-color: blueviolet;
+    color: white;
+}
+.n1 .div1 .sciola i{
+    font-size: 22.5px;
+    margin: 0 0 0 10px;
+}
+.sectio1{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sectio1 .heloo{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+.sectio1 h1{
+    color: blueviolet;
+    font-size: 30px;
+}
+.sectio1 .heloo .card{
+    padding: 35px;
+    border: 2px solid rgb(192, 125, 255);
+    border-radius: 15px 35px;
+    transition: .5s;
+}
+.sectio1 .heloo .card:hover{
+    border: 2px solid blueviolet;
+    transform: scale(1.1);
+}
+.sectio1 .heloo .card i{
+    font-size: 35px;
+    margin: 10px;
+    color: blueviolet;
+}
+.sectio1 .heloo .card h2{
+    font-size: 25px;
+    margin: 10px;
+    color: blueviolet;
+}
+.sectio1 .heloo .card p{
+    margin: 10px;
+    color: gray;
+    font-weight: 100;
+}
+@media(max-width: 767px){
+    header nav .social-link{
+        display: none;
+    }
+    .n1{
+        display: block;
+        text-align: center;
+    }
+    .n1 img{
+        width: 100%;
+    }
+    .n1{
+        padding-top: 100px;
+    }
+    .sectio1 .heloo{
+        display: block;
+    }
+    .sectio1 .heloo .card{
+        margin: 15px 0;
+    }
+}
