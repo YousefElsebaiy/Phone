@@ -167,9 +167,11 @@ header nav .text{
     justify-content: space-around;
     margin: 50px;
 }
-.sectio1 h1{
+.heading1{
     color: blueviolet;
     font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
 }
 .sectio1 .heloo .card{
     padding: 35px;
@@ -196,6 +198,26 @@ header nav .text{
     color: gray;
     font-weight: 100;
 }
+.margin{
+    margin-bottom: 10px;
+}
+.section2 .items .phone1{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center
+}
+.section2 .items .phone1 .cd{
+    margin: 20px 0;
+}
+.section2 .items .phone1 .cd img:hover{
+    margin-bottom: 10px;
+    transition: .5s;
+}
+.section2 .items .phone1 .cd img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
 @media(max-width: 767px){
     header nav .social-link{
         display: none;
@@ -215,5 +237,8 @@ header nav .text{
     }
     .sectio1 .heloo .card{
         margin: 15px 0;
+    }
+    .section2 .items .phone1{
+        display: block;
     }
 }

@@ -65,4 +65,9 @@ p4.addEventListener("mouseleave", function(){
     p4.style.backgroundColor = "white"
     p4.style.color = "blueviolet"
 })
-p1.addEventListener()
+p1.addEventListener("click", function(){
+    window.scroll({
+        top: 0,
+        behavior: "smooth",
+    })
+})
