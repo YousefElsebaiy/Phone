@@ -8,6 +8,11 @@ let p1 = document.getElementById("p1")
 let p2 = document.getElementById("p2")
 let p3 = document.getElementById("p3")
 let p4 = document.getElementById("p4")
+let t1 = document.getElementById("t1")
+let t2 = document.getElementById("t2")
+let t3 = document.getElementById("t3")
+let t4 = document.getElementById("t4")
+let button = document.getElementById("button")
 menu.onclick = function(){
     links.classList.toggle("active")
     first.classList.toggle("first")
@@ -71,3 +76,49 @@ p1.addEventListener("click", function(){
         behavior: "smooth",
     })
 })
+p2.addEventListener("click", function(){
+    window.scroll({
+        top: 600,
+        behavior: "smooth",
+    })
+})
+button.addEventListener("click", function(){
+    window.scroll({
+        top: 600,
+        behavior: "smooth",
+    })
+})
+p3.addEventListener("click", function(){
+    window.scroll({
+        top: 1000,
+        behavior: "smooth",
+    })
+})
+p4.addEventListener("click", function(){
+    window.scroll({
+        top: 2000,
+        behavior: "smooth",
+    })
+})
+function country(){
+    if(form1.t1.value == ""){
+        alert("من فضلك ادخل بريدك الالكتروني")
+        return false
+    }
+    if(form1.t2.value == ""){
+        alert("من فضلك ادخل الرقم السري الالكتروني")
+        return false
+    }
+    if(form1.t3.value == ""){
+        alert("من فضلك ادخل  رقم الهاتف")
+        return false
+    }
+    if(form1.t4.value == ""){
+        alert("من فضلك ادخل موقعك الجغرافي الالكتروني")
+        return false
+    }
+    if(isNaN(form1.t3.value)){
+        alert("ادخل قيمة عددية")
+        return false
+    }
+}
