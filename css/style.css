@@ -274,11 +274,12 @@ footer nav{
     background-color: blueviolet;
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 20px;
-        text-align: center;
+    font-size: 20px;
+    text-align: center;
 }
 footer nav p{
     padding-top: 25px;
+    margin-top: 10px;
 }
 @media(max-width: 767px){
     header nav .social-link{
