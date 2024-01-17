@@ -106,7 +106,7 @@ function country(){
         return false
     }
     if(form1.t2.value == ""){
-        alert("من فضلك ادخل الرقم السري الالكتروني")
+        alert("من فضلك ادخل الرقم السري")
         return false
     }
     if(form1.t3.value == ""){
@@ -114,7 +114,7 @@ function country(){
         return false
     }
     if(form1.t4.value == ""){
-        alert("من فضلك ادخل موقعك الجغرافي الالكتروني")
+        alert("من فضلك ادخل موقعك الجغرافي")
         return false
     }
     if(isNaN(form1.t3.value)){
