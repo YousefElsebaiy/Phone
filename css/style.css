@@ -282,6 +282,16 @@ footer nav p{
     padding-top: 25px;
     margin-top: 10px;
 }
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(101, 23, 175);
+}
 @media(max-width: 767px){
     header nav .social-link{
         display: none;
